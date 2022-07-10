@@ -1,0 +1,34 @@
+TASK-2
+QUESTION: Write a blog on the differences between document and window objects.
+
+ANSWER:
+
+DOCUMENT AND WINDOW OBJECTS:
+      
+        The window object is related to the window that gets loaded into the browser first. This window object has the majority of the properties like length, innerWidth, innerHeight,
+name, if it has been closed, its parents, and more.
+
+        The document object is the html, aspx, php, or other document that will be loaded into the browser. The document actually gets loaded inside the window object and has 
+properties available to it like title, URL, cookie, etc.
+ 
+ In order to access a property for the window, it is:  
+                                          window.property
+ In order to access a property for the document, it is:
+                                           window.document.property or simply document.property
+
+DIFFERENCES BETWEEN DOCUMENT AND WINDOW OBJECTS:
+
+                             Window object                                                                                Document object
+
+1)It represents a browser window or frame that displays the contents of the webpage.        1)It represents any HTML document or web page that is loaded in the browser.
+2)It is the very first object that is loaded in the browser.                                2)It is loaded inside the window.
+3)it is the object of the browser                                                           3)It is the object of the window property.
+4)Global objects, functions, and variables of JavaScript are members of the window object.  4)All the tags, elements with attributes in HTML are part of the document.
+5)We can access the window from the window only. i.e. window.window                         5)We can access the document from a window using the window. document
+6)The window is part of BOM(Browser object model), not DOM(document object Model)           6)The document is part of BOM and DOM.
+7)Properties of the window object cannot be accessed by the document object.                7)Properties of document objects such as title, body, cookies, etc can also
+                                                                                              be accessed by a window like this window. document.title
+8)syntax:                                                                                   8)syntax:
+          document.propertyname;                                                                         window.propertyname;
+9)example:                                                                                  9)example:
+     document.title :  will return the title of the document                                       window.innerHeight : will return the height of the content area of the browser. 
